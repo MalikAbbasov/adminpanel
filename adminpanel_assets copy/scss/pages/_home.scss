@@ -1,0 +1,132 @@
+@mixin df{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    max-width: 100vw;
+    height: 95vh;
+    background: rgb(14,36,0);
+    background: linear-gradient(90deg, rgba(14,36,0,1) 0%, rgba(29,92,109,1) 51%, rgba(110,121,9,1) 100%, rgba(0,0,0,1) 100%);
+}
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    .text{
+        font-size: 25px;
+        color: white;
+    }
+    form{
+        @include df;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        margin-bottom: 45px;
+        input{
+            width: 500px;
+            height: 45px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    }
+    .buton{
+        width: 300px;
+        height: 50px;
+        border-radius: 20px;
+        background: rgb(78, 182, 165);
+        background: radial-gradient(circle, rgba(78, 182, 182, 0.895) 100%, rgba(156,219,29,0.6222864145658263) 200%);
+        font-size: 23px;
+        color: white;
+        transition: 400ms;
+        &:hover{
+            cursor: pointer;
+            width: 350px;
+            height: 55px;
+            background: rgb(0,30,36);
+background: linear-gradient(90deg, rgba(0,30,36,1) -55%, rgba(77,16,42,1) 1%, rgba(29,92,109,1) 51%, rgba(121,9,82,1) 100%, rgba(0,0,0,1) 100%);
+        }
+    }
+}
+
+.asidebar {
+    width: 100vw;
+    height: 100px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 15%,
+      rgba(101, 109, 29, 1) 51%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(121, 9, 9, 1) 100%
+    );
+    transition: 500ms;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    a {
+      color: rgb(0, 0, 0);
+      font-size: 28px;
+      width: max-content;
+      height: 20px;
+      position: relative;
+      margin: 10px;
+      color: white;
+      &:hover {
+        color: rgb(218, 193, 193);
+      }
+    }
+    i {
+      font-size: 28px;
+      color: white;
+      position: absolute;
+      right: 40px;
+      top: 35px;
+      transition: 300ms;
+      &:hover {
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+  a::before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    transition: 400ms;
+    transform-origin: left;
+    text-decoration: underline;
+  }
+  a:hover::before {
+    width: 100%;
+    background-color: rgb(245, 180, 0);
+  }
+  .aside_button {
+    margin: 20px;
+    width: 75px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(77, 117, 4);
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 300ms;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(231, 199, 15);
+      color: black;
+    }
+  }
+  .none {
+    transform: translate(-100px, -110px);
+  }

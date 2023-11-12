@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background: rgb(58,180,173);
+  background: linear-gradient(90deg, rgb(107, 238, 32) 14%, rgb(5, 73, 94) 50%, rgb(107, 238, 32) 100%);
+}
+.go_homepage {
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgb(25, 119, 25);
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+.go_homepage:hover {
+  cursor: pointer;
+  background-color: rgb(92, 189, 92);
+}
+
+.add_newuser {
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgb(25, 119, 25);
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+.add_newuser:hover {
+  cursor: pointer;
+  background-color: rgb(92, 189, 92);
+}
+
+.container {
+  width: 1600px;
+  min-height: 60vh;
+  border: 1px solid black;
+  margin:20px  auto;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container .table_header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.table_header .table-id{
+  width: 75px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.table_header .table-img{
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.table_header .table-name{
+  width: 125px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.table_header .table-job{
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.table_header .table-update{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.table_header .table-delete{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+

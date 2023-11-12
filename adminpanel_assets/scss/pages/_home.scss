@@ -1,0 +1,24 @@
+@mixin buton{
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: rgb(32, 168, 20);
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(42, 148, 42)
+    }
+@mixin df{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+}
+.go_homepage{
+    @include buton;
+}
+.add_newuser{
+    @include buton;
+}

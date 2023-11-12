@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 100vw;
+  height: 95vh;
+  background: rgb(14, 36, 0);
+  background: linear-gradient(90deg, rgb(14, 36, 0) 0%, rgb(29, 92, 109) 51%, rgb(110, 121, 9) 100%, rgb(0, 0, 0) 100%);
+}
+
+.go_admin {
+  width: 160px;
+  height: 75px;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 18px;
+  background-color: hotpink;
+  color: white;
+  transition: 400ms;
+}
+.go_admin:hover {
+  cursor: pointer;
+  width: 175px;
+  height: 80px;
+  background-color: rgb(148, 9, 79);
+}
+
+.container {
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+  height: 550px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .text {
+  font-size: 25px;
+  color: white;
+}
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  margin-bottom: 45px;
+}
+.container form input {
+  width: 500px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.container .buton {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  background: rgb(78, 182, 165);
+  background: radial-gradient(circle, rgba(78, 182, 182, 0.895) 100%, rgba(156, 219, 29, 0.6222864146) 200%);
+  font-size: 23px;
+  color: white;
+  transition: 400ms;
+}
+.container .buton:hover {
+  cursor: pointer;
+  width: 350px;
+  height: 55px;
+  background: rgb(0, 30, 36);
+  background: linear-gradient(90deg, rgb(0, 30, 36) -55%, rgb(77, 16, 42) 1%, rgb(29, 92, 109) 51%, rgb(121, 9, 82) 100%, rgb(0, 0, 0) 100%);
+}/*# sourceMappingURL=main.css.map */
